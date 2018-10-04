@@ -1,0 +1,36 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-hidden--mobile {
+  overflow: auto;
+  @media (max-width: $tablet-sm) {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.responsive-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

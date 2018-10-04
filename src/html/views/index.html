@@ -1,0 +1,29 @@
+<% var data = {
+title: "Index Page"
+}; %>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<body>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<h1>Заголовок h1</h1>
+<h2>Заголовок h2</h2>
+<h3>Заголовок h3</h3>
+<h4>Заголовок h4</h4>
+<h5>Заголовок h5</h4>
+<h6>Заголовок h6</h6>
+
+<main>
+
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
+
+<%= _.template(require('./../includes/scripts.html'))(data) %>
+</body>
+
+</html>

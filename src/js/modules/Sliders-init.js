@@ -1,0 +1,1 @@
+import Swiper from '../libs/swiper.min';
